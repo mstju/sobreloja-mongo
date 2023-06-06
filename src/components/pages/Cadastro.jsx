@@ -130,12 +130,13 @@ export default function Cadastro() {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("sobreloja-mongo.vercel.app/submit", data);
+      await axios.post("https://sobreloja-mongo.vercel.app/submit", data);
       console.log("Dados armazenados com sucesso!");
     } catch (error) {
       console.error("Erro ao armazenar os dados", error);
     }
   };
+  
 
   const handleRedirectHome = () => {};
 
