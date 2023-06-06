@@ -17,6 +17,7 @@ app.use(cors());
 
 app.post("/submit", async (req, res) => {
   try {
+    await client.connect();
     const { confirmarSenha, ...dados } = req.body;
     const collection = client.db("bancotera").collection("colecaotera");
     const saltRounds = 10;
