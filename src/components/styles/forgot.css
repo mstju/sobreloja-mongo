@@ -1,0 +1,17 @@
+.forgot-container {
+  background-image: url(../img/fundo/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.card-forgot {
+  border-radius: 2em;
+  -webkit-box-shadow: 10px 11px 9px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 9px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 9px -7px rgba(0, 0, 0, 0.75);
+  background-color: #f8f9fa !important;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}

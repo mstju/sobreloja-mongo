@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/fundo/background.jpg);
+  background-repeat: inherit;
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn:hover {
+  transition: 0.8s;
+}
+
+.links-register:hover {
+  color: #000;
+  transition: 0.6s;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+form {
+  text-align: left;
+}
+
+.nome,
+.sobrenome,
+.password,
+.dataC {
+  width: 49.5%;
+}
+
+.cep,
+.uf,
+.numero {
+  width: 32.3%;
+}
+
+.senha,
+.dataCPF,
+.nomeCompleto,
+.endereco {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries do formulário */
+
+@media (max-width: 480px) {
+  body {
+    overflow: scroll;
+  }
+  .nome,
+  .sobrenome,
+  .password,
+  .dataC,
+  .cep,
+  .uf,
+  .numero {
+    width: 100%;
+  }
+  .senha,
+  .dataCPF,
+  .nomeCompleto,
+  .endereco {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cadastro-conteudo {
+  min-width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.cadastro-btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-cadastro {
+  max-width: 300px;
+  max-height: 90px;
+}
+
+.card-cadastro {
+  border-radius: 2em;
+  box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  background-color: #f8f9fa !important;
+  padding: 1rem;
+}
